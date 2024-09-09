@@ -1,0 +1,37 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  margin: 0;
+}
+
+.blink-button {
+  padding: 15px 30px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  color: white;
+  background-color: #3b83bd;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.blink-button:hover {
+  background-color: #f8c1c1;
+  color: #fff;
+  animation: blink 0.5s alternate infinite;
+}
+
+@keyframes blink {
+  0% {
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5), 0 0 20px rgba(255, 0, 0, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 30px rgba(11, 100, 233, 0.8), 0 0 50px rgba(7, 48, 230, 0.8);
+  }
+}

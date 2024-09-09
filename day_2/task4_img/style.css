@@ -1,0 +1,24 @@
+   img {
+       transition: opacity 0.5s ease;
+   }
+   img:hover {
+       animation: fadeOut 2s forwards;
+   }
+   
+   @keyframes fadeOut {
+       0% {
+           opacity: 1;
+       }
+       25% {
+           opacity: 0.75;
+       }
+       50% {
+           opacity: 0.5;
+       }
+       75% {
+           opacity: 0.25;
+       }
+       100% {
+           opacity: 0;
+       }
+   }
